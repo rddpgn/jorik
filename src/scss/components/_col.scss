@@ -4,7 +4,7 @@
     box-sizing:border-box;
 }
 
-.col_left-align {
+.col_text-left-align {
     text-align: left;
 }
 
@@ -22,4 +22,8 @@
 
 .col_gap-m > * + * {
     margin-top: $pad-m;
+}
+
+.col_align-left {
+    align-items: flex-start;
 }

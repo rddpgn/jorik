@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
     <header class='header' id='header'>
@@ -28,7 +29,7 @@
             <div class="dropdown inline-block">
                 <a class='dropdown__element' href=""><img class='icon_small' src="./icon/account.svg" alt=""></a>
                 <div class='dropdown__menu'>
-                    <div class="col col_left-align col_gap-s2">
+                    <div class="col col_text-left-align col_gap-s2">
                         <h5 class='uppercase'>login</h5>
                         <form action="" class='mg-bottom-s'>
                             <div class='col col_gap-s3'>
@@ -59,7 +60,7 @@
         <div class='mobile-menu__background' id='mobile-menu-bc'></div>
         <div class="col col_gap-s ">
             <button class='button-cross' id='mobile-menu-button-hide'>✕</button>
-            <input type="text padding-s" placeholder="Search for products..." >
+            <input type="text" placeholder="Search for products..." >
             <div class='gray-line'></div>
             <nav class='col col_gap-s3'>
                 <a href="" class='link uppercase'>shop</a>
@@ -86,8 +87,97 @@
             <a href="" class="inline-block"><button class='button-black uppercase'>shop the collection</button></a>
         </div>
     </div>
-    <div class="page-content"></div>
+    <div class="page-content">
+        <span class='uppercase text-black'>ready to wear</span>
+        <div class='carousel-shop'>
+            <div class="carousel-shop__control"></div>
+            <div class="carousel-shop__items">
+                <div class="product-card col col_gap-s">
+                    <div class="product-card__img quad">
+                        <img class='product-card__img-front' src="./img/product/product-1-f.webp" alt="">
+                        <img class='product-card__img-back' src="./img/product/product-1-b.webp" alt="">
+                        <div class='product-card__img-size'>XS S M X XL</div>
+                    </div>
+                    <div class='product-card__description col col_gap-s3 text-s col_align-left'>
+                        <span class='inline-block uppercase'>ROTATING LOGO T-SHIRT WHITE UNISEX</span>
+                        <span class='product-card__description-price inline-block text-black'>$100.00</span>
+                    </div>
+                </div>
+
+                <div class="product-card col col_gap-s">
+                    <div class="product-card__img quad">
+                        <img class='product-card__img-front' src="./img/product/product-1-f.webp" alt="">
+                        <img class='product-card__img-back' src="./img/product/product-1-b.webp" alt="">
+                        <div class='product-card__img-size'>XS S M X XL</div>
+                    </div>
+                    <div class='product-card__description col col_gap-s3 text-s col_align-left'>
+                        <span class='inline-block uppercase'>ROTATING LOGO T-SHIRT WHITE UNISEX</span>
+                        <span class='product-card__description-price inline-block text-black'>$100.00</span>
+                    </div>
+                </div>
+
+                <div class="product-card col col_gap-s">
+                    <div class="product-card__img quad">
+                        <img class='product-card__img-front' src="./img/product/product-1-f.webp" alt="">
+                        <img class='product-card__img-back' src="./img/product/product-1-b.webp" alt="">
+                        <div class='product-card__img-size'>XS S M X XL</div>
+                    </div>
+                    <div class='product-card__description col col_gap-s3 text-s col_align-left'>
+                        <span class='inline-block uppercase'>ROTATING LOGO T-SHIRT WHITE UNISEX</span>
+                        <span class='product-card__description-price inline-block text-black'>$100.00</span>
+                    </div>
+                </div>
+
+                <div class="product-card col col_gap-s">
+                    <div class="product-card__img quad">
+                        <img class='product-card__img-front' src="./img/product/product-1-f.webp" alt="">
+                        <img class='product-card__img-back' src="./img/product/product-1-b.webp" alt="">
+                        <div class='product-card__img-size'>XS S M X XL</div>
+                    </div>
+                    <div class='product-card__description col col_gap-s3 text-s col_align-left'>
+                        <span class='inline-block uppercase'>ROTATING LOGO T-SHIRT WHITE UNISEX</span>
+                        <span class='product-card__description-price inline-block text-black'>$100.00</span>
+                    </div>
+                </div>
+
+                <div class="product-card col col_gap-s">
+                    <div class="product-card__img quad">
+                        <img class='product-card__img-front' src="./img/product/product-1-f.webp" alt="">
+                        <img class='product-card__img-back' src="./img/product/product-1-b.webp" alt="">
+                        <div class='product-card__img-size'>XS S M X XL</div>
+                    </div>
+                    <div class='product-card__description col col_gap-s3 text-s col_align-left'>
+                        <span class='inline-block uppercase'>ROTATING LOGO T-SHIRT WHITE UNISEX</span>
+                        <span class='product-card__description-price inline-block text-black'>$100.00</span>
+                    </div>
+                </div>
+
+                <div class="product-card col col_gap-s">
+                    <div class="product-card__img quad">
+                        <img class='product-card__img-front' src="./img/product/product-1-f.webp" alt="">
+                        <img class='product-card__img-back' src="./img/product/product-1-b.webp" alt="">
+                        <div class='product-card__img-size'>XS S M X XL</div>
+                    </div>
+                    <div class='product-card__description col col_gap-s3 text-s col_align-left'>
+                        <span class='inline-block uppercase'>ROTATING LOGO T-SHIRT WHITE UNISEX</span>
+                        <span class='product-card__description-price inline-block text-black'>$100.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer></footer>
+
     <script src='index.js'></script>
-</body>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+        $('.carousel-shop__items').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+        });
+        </script>
+    </body>
 </html>
