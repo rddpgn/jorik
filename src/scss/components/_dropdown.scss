@@ -1,0 +1,68 @@
+.dropdown {
+    position: relative;
+
+    .dropdown__menu {
+        animation: fadeOutToNone 0.2s ease-out;
+        animation-fill-mode: forwards;
+    }
+}
+
+.dropdown::after {
+    display: block;
+    content: '';
+    width: $icon-small;
+    height: 1.75rem;
+    position: absolute;
+}
+
+.dropdown__menu {
+    position: absolute;
+    top: 3.35rem;
+    right: -$pad-m;
+    background: white;
+    box-sizing: border-box;
+    padding: $pad-m;
+    border: 1px solid black;
+    border-top: none;
+}
+
+.dropdown:hover {
+    .dropdown__menu {
+        animation: fadeInFromNone 0.2s ease-out;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    1% {
+        visibility: visible;
+        opacity: 0;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutToNone {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    99% {
+        visibility: visible;
+        opacity: 0.5;
+    }
+
+    100% {
+        visibility: hidden;
+        opacity: 0.5;
+    }
+}

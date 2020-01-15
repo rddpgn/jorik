@@ -1,0 +1,21 @@
+.col {
+    display: flex;
+    flex-direction: column;
+    box-sizing:border-box;
+}
+
+.col_left-align {
+    text-align: left;
+}
+
+.col_pad-s > * + * {
+    margin-top: $pad-s;
+}
+
+.col_pad-s2 > * + * {
+    margin-top: $pad-s2;
+}
+
+.col_pad-s3 > * + * {
+    margin-top: $pad-s3;
+}

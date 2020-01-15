@@ -1,0 +1,54 @@
+:root {
+    font-size: 1vw;
+    font-family: Poppins, sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.hidden {
+    display: none;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+
+@media (max-width: 1000px) {
+    :root {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 400px) {
+    :root {
+        font-size: 3.5vw;
+    }
+}
+
+h5 {
+    padding: $pad-s3 0;
+}
+
+.mg-bottom-s {
+    margin-bottom: $pad-s;
+}
+
+a > img {
+    cursor: pointer;
+}
+
+.gray-line {
+    height: 1px;
+    border-top: 1px solid gray;
+}

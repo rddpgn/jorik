@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class='header'>
+        <div class='header__mobile-menu'>
+            <button id='mobile-menu-button'><img src="./icon/menu.svg" class="icon_small" alt=""></button>
+            <span class='uppercase'>menu</span>
+        </div>
+        <div class='header__links'>
+            <nav>
+                <ul>
+                    <li class='inline-block'><a href="" class='link uppercase'>shop</a></li>
+                    <li class='inline-block'><a href="" class='link uppercase'>lookbook</a></li>
+                    <li class='inline-block'><a href="" class='link uppercase'>about</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class='header__name'><h1>JORIK</h1></div>
+        <div class="header__user">
+            <a class='inline-block' ref=""><img class='icon_small' src="./icon/search.svg" alt=""></a>
+            <div class="dropdown inline-block">
+                <a class='dropdown__element' href=""><img class='icon_small' src="./icon/account.svg" alt=""></a>
+                <div class='dropdown__menu'>
+                    <div class="col col_left-align col_pad-s2">
+                        <h5 class='uppercase'>login</h5>
+                        <form action="" class='mg-bottom-s'>
+                            <div class='col col_pad-s3'>
+                                <span class='uppercase text-s2'>email</span>
+                                <input type="email" name="" id="">
+                                <span class='uppercase text-s2'>password</span>
+                                <input type="password">
+                                <input type="submit" class='button-sign-in' value="sign in">
+                            </div>
+                        </form>
+                        <a href="" class='link text-s'>Regsiter</a>
+                        <a href="" class='link text-s'>Forgot your password?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown inline-block">
+                <a class='dropdown__element' href=""><img class='icon_small' src="./icon/shopping-cart.svg" alt=""></a>
+                <div class='dropdown__menu'>
+                    <div class='col'><div class='text-s'>Your cart is currenly empty.</div></div>
+                </div>
+            </div>
+        </div>
+        <div class='header__mobile-cart hidden'></div>
+    </header>
+    <div class='mobile-menu mobile-menu_hidden' id='mobile-menu'>
+        <div class='mobile-menu__background' id='mobile-menu-bc'></div>
+        <div class="col col_pad-s ">
+            <button class='button-cross' id='mobile-menu-button-hide'>✕</button>
+            <input type="text padding-s" placeholder="Search for products..." >
+            <div class='gray-line'></div>
+            <nav class='col col_pad-s3'>
+                <a href="" class='link uppercase'>shop</a>
+                <a href="" class='link uppercase'>lookbook</a>
+                <a href="" class='link uppercase'>about</a>
+            </nav>
+            <div class='gray-line'></div>
+            <nav class='col col_pad-s3'>
+                <a href="" class='link uppercase'>faq</a>
+                <a href="" class='link uppercase'>shipping and returns</a>
+                <a href="" class='link uppercase'>contact</a>
+            </nav>
+            <div class='gray-line'></div>
+            <nav class='col col_pad-s3'>
+                <a href="" class='link uppercase'>login</a>
+                <a href="" class='link uppercase'>register</a>
+            </nav>
+        </div>
+    </div>
+    <div class="page-welcome"></div>
+    <div class="page-content"></div>
+    <footer></footer>
+    <script src='index.js'></script>
+</body>
+</html>

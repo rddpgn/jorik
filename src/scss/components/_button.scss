@@ -1,0 +1,21 @@
+.button-sign-in {
+    background: $color-black;
+    border: none;
+    outline: none;
+    color: $color-white;
+    font-size: $font-size-s;
+    text-transform: uppercase;
+    padding: $pad-s3;
+    cursor: pointer;
+}
+
+.button-cross {
+    width: 3rem;
+    height: 3rem;
+    color: black;
+    display: block;
+    border-radius: 50%;
+    line-height: 3.5rem;
+    font-size: 3rem;
+    margin: $pad-s;
+}
