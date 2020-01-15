@@ -88,9 +88,12 @@
         </div>
     </div>
     <div class="page-content">
-        <span class='uppercase text-black'>ready to wear</span>
+        <span class='uppercase text-black padding-s4'>ready to wear</span>
         <div class='carousel-shop'>
-            <div class="carousel-shop__control"></div>
+            <div class="carousel-shop__control">
+                <div class='carousel-shop__control-arrow-left'>&#8249;</div>
+                <div class='carousel-shop__control-arrow-right'>&#8250;</div>
+            </div>
             <div class="carousel-shop__items">
                 <div class="product-card col col_gap-s">
                     <div class="product-card__img quad">
@@ -177,6 +180,29 @@
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 3,
+            prevArrow: $('.carousel-shop__control-arrow-left'),
+            nextArrow: $('.carousel-shop__control-arrow-right'),
+            autoplay: true,
+            responsive: [
+                {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                }
+                },
+                {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                },
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
         });
         </script>
     </body>

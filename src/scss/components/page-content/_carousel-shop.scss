@@ -1,0 +1,34 @@
+.carousel-shop {
+    position: relative;
+    margin: $pad-m 0;
+}
+
+.carousel-shop__control-arrow-left {
+    z-index: 1;
+    position: absolute;
+    font-size: 5rem;
+    cursor: pointer;
+    top: 33%;
+    left: -1rem;
+
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+.carousel-shop__control-arrow-right {
+    z-index: 1;
+    position: absolute;
+    font-size: 5rem;
+    right: -1rem;
+    cursor: pointer;
+    top: 33%;
+
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}

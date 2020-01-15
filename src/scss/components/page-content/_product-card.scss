@@ -1,5 +1,6 @@
 .product-card {
     margin: 0 $pad-m;
+    outline: none;
 }
 
 .product-card:hover {
@@ -50,4 +51,10 @@
 .product-card__description-price {
     padding: $pad-s4 $pad-s3;
     transition: padding 0.3s;
+}
+
+@media (max-width: 1000px) {
+    .product-card {
+        margin: 0 $pad-s;
+    }
 }
