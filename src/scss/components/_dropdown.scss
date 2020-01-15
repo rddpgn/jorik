@@ -17,13 +17,11 @@
 
 .dropdown__menu {
     position: absolute;
-    top: 3.35rem;
+    top: 3.3rem;
     right: -$pad-m;
     background: white;
     box-sizing: border-box;
     padding: $pad-m;
-    border: 1px solid black;
-    border-top: none;
 }
 
 .dropdown:hover {

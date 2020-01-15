@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class='header'>
+    <header class='header' id='header'>
         <div class='header__mobile-menu'>
             <button id='mobile-menu-button'><img src="./icon/menu.svg" class="icon_small" alt=""></button>
             <span class='uppercase'>menu</span>
@@ -47,11 +47,13 @@
             <div class="dropdown inline-block">
                 <a class='dropdown__element' href=""><img class='icon_small' src="./icon/shopping-cart.svg" alt=""></a>
                 <div class='dropdown__menu'>
-                    <div class='col'><div class='text-s'>Your cart is currenly empty.</div></div>
+                    <div class='text-s text-nowrap'>Your cart is currenly empty.</div>
                 </div>
             </div>
         </div>
-        <div class='header__mobile-cart hidden'></div>
+        <div class='header__mobile-cart'>
+            <a class='dropdown__element' href=""><img class='icon_small' src="./icon/shopping-cart.svg" alt=""></a>
+        </div>
     </header>
     <div class='mobile-menu mobile-menu_hidden' id='mobile-menu'>
         <div class='mobile-menu__background' id='mobile-menu-bc'></div>
@@ -77,7 +79,7 @@
             </nav>
         </div>
     </div>
-    <div class="page-welcome"></div>
+    <div class="page-welcome placeholder"></div>
     <div class="page-content"></div>
     <footer></footer>
     <script src='index.js'></script>
