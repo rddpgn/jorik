@@ -5,6 +5,10 @@
     transition: color 0.1s;
 }
 
+.link_white {
+    color: $color-white;
+}
+
 .link:hover {
     color: $color-active;
 }

@@ -1,6 +1,6 @@
-@import 'reset.scss';
-@import 'variables.scss';
-@import 'root.scss';
+@import 'reset';
+@import 'variables';
+@import 'root';
 
 @import './components/header/header';
 @import './components/links';
@@ -14,3 +14,4 @@
 @import './components/page-content/page-content';
 @import './components/page-content/carousel-shop';
 @import './components/page-content/product-card';
+@import './components/footer/footer';

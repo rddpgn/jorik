@@ -96,6 +96,9 @@ a > img {
 .padding-s4 {
   padding: 0.25rem; }
 
+.padding-x {
+  padding: 3rem; }
+
 .header {
   width: 100%;
   box-sizing: border-box;
@@ -174,6 +177,9 @@ a > img {
   text-decoration: none;
   transition: color 0.1s; }
 
+.link_white {
+  color: white; }
+
 .link:hover {
   color: salmon; }
 
@@ -233,9 +239,6 @@ a > img {
   flex-direction: column;
   box-sizing: border-box; }
 
-.col_text-left-align {
-  text-align: left; }
-
 .col_gap-s > * + * {
   margin-top: 1rem; }
 
@@ -263,9 +266,21 @@ a > img {
 .text-nowrap {
   white-space: nowrap; }
 
+.text-bold {
+  font-weight: 500; }
+
 .text-black {
   color: white;
   background-color: black; }
+
+.text_white {
+  color: black; }
+
+.text-align-center {
+  text-align: center; }
+
+.text-align-left {
+  text-align: left; }
 
 .button-sign-in {
   background: black;
@@ -371,9 +386,28 @@ a > img {
   box-sizing: border-box;
   padding: 3rem; }
 
+.page-content__lookbook {
+  display: flex;
+  flex-direction: row; }
+
+.page-content__lookbook > img {
+  margin-top: 3rem;
+  width: calc(50% - 1rem/2); }
+
+@media (min-width: 500px) {
+  .page-content__lookbook > img + img {
+    margin-left: 1rem; } }
+
+@media (max-width: 500px) {
+  .page-content__lookbook {
+    flex-direction: column; }
+  .page-content__lookbook > img {
+    width: 100%;
+    margin-left: 0; } }
+
 .carousel-shop {
   position: relative;
-  margin: 1.5rem 0; }
+  margin: 3rem 0; }
 
 .carousel-shop__control-arrow-left {
   z-index: 1;
@@ -460,3 +494,22 @@ a > img {
 @media (max-width: 1000px) {
   .product-card {
     margin: 0 1rem; } }
+
+.footer {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4rem 6rem;
+  display: flex;
+  flex-direction: row; }
+
+.footer > * {
+  flex: 1 1 0; }
+
+.footer nav {
+  margin-top: 1rem; }
+
+@media (max-width: 500px) {
+  .footer {
+    flex-direction: column; }
+  .footer > * + * {
+    margin-top: 3rem; } }

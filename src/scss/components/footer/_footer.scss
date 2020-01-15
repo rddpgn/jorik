@@ -1,0 +1,26 @@
+.footer {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4rem 6rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.footer > * {
+    flex: 1 1 0;
+}
+
+.footer nav {
+    margin-top: $pad-s;
+}
+
+@media (max-width: 500px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer > * + * {
+        margin-top: $pad-x;
+    }
+}

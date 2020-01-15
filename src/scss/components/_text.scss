@@ -14,7 +14,23 @@
     white-space: nowrap;
 }
 
+.text-bold {
+    font-weight: 500;
+}
+
 .text-black {
     color: white;
     background-color: black;
+}
+
+.text_white {
+    color: $color-black;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
 }

@@ -2,3 +2,30 @@
     box-sizing: border-box;
     padding: $pad-x;
 }
+
+.page-content__lookbook {
+    display: flex;
+    flex-direction: row;
+}
+
+.page-content__lookbook > img{
+    margin-top: $pad-x;
+    width: calc(50% - #{$pad-s}/2);
+}
+
+@media (min-width: 500px) {
+    .page-content__lookbook > img + img{
+        margin-left: $pad-s;
+    }
+}
+
+@media (max-width: 500px) {
+    .page-content__lookbook {
+        flex-direction: column;
+    }
+
+    .page-content__lookbook > img{
+        width: 100%;
+        margin-left: 0;
+    }
+}

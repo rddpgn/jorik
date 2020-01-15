@@ -4,10 +4,6 @@
     box-sizing:border-box;
 }
 
-.col_text-left-align {
-    text-align: left;
-}
-
 .col_gap-s > * + * {
     margin-top: $pad-s;
 }
