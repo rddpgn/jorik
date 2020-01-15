@@ -8,14 +8,18 @@
     text-align: left;
 }
 
-.col_pad-s > * + * {
+.col_gap-s > * + * {
     margin-top: $pad-s;
 }
 
-.col_pad-s2 > * + * {
+.col_gap-s2 > * + * {
     margin-top: $pad-s2;
 }
 
-.col_pad-s3 > * + * {
+.col_gap-s3 > * + * {
     margin-top: $pad-s3;
+}
+
+.col_gap-m > * + * {
+    margin-top: $pad-m;
 }
